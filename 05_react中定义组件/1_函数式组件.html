@@ -26,6 +26,13 @@
             }
             // 2.渲染组件到页面
             ReactDOM.render(<MyComponent/>,document.getElementById('test'));
+            /* 
+                执行了  ReactDOM.render(<MyComponent/> .....  发生了什么？
+                1.React 会解析组件标签，找到MyComponent 组件，
+                2.返现组件是使用函数定义的，随后调用该函数，将返回的虚拟DOM转为真实DOM,随后呈现在页面
+            
+            */
+            
         </script>
     </body>
 </html>
